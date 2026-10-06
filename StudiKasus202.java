@@ -3,21 +3,20 @@ import java.util.Scanner;
 public class StudiKasus202 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Scanner ab = new Scanner(System.in);
-        Scanner cd = new Scanner(System.in);
 
         System.out.print("Nama Mahasiswa: ");
         String namaSiswa = sc.nextLine();
         System.out.print("Jenis Kegiatan: ");
         String kegiatan = sc.nextLine();
+        System.out.print("Jumlah dokumen yang diupload: ");
+        byte jumlahDokumen = sc.nextByte();
+        System.out.print("Peringkat Juara: ");
+        byte peringkat = sc.nextByte();
+        System.out.println("Apakah lolos pendanaan? (ketik (1) jika lolos, (0) jika tidak");
+        byte lolosPendanaan = sc.nextByte();
         
 
         if (kegiatan == "BELMAWA" || kegiatan == "BAKORMA" || kegiatan == "MANDIRI" || kegiatan == "belmawa" || kegiatan == "bakorma" || kegiatan == "mandiri") {
-
-            System.out.print("Jumlah dokumen yang diupload: ");
-            byte jumlahDokumen = ab.nextByte();
-            System.out.print("Peringkat Juara: ");
-            byte peringkat = ab.nextByte();
 
             if (peringkat > 0 && peringkat < 4) {
                 if (jumlahDokumen == 4) {
@@ -30,9 +29,6 @@ public class StudiKasus202 {
             }
 
         } else if (kegiatan == "PKM" || kegiatan == "pkm") {
-
-            System.out.println("Apakah lolos pendanaan? (ketik (1) jika lolos, (0) jika tidak");
-            byte lolosPendanaan = cd.nextByte();
 
             if (lolosPendanaan == 1) {
                 System.out.println("Status: Dana Penghargaan Diberikan.");
