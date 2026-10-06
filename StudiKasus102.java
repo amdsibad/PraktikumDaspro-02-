@@ -12,11 +12,9 @@ public class StudiKasus102 {
         int jumlahCup = sc.nextInt();
         System.out.println("Masukkan uang bayar: ");
         int uangBayar = sc.nextInt();
-        System.out.println("Total harga: Rp. ");
-        int totalHarga = sc.nextInt();
-        System.out.println("Diskon: ");
-        int diskon = sc.nextInt();
-        System.out.println("Total bayar: ");
-        int totalBayar = sc.nextInt();
+
+        int totalHarga;
+        int diskon;
+        int totalBayar;
     }
 }
